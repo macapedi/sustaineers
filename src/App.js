@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import './App.scss';
 import CommunalPage from './pages/CommunalPage/CommunalPage';
@@ -51,7 +51,6 @@ function App() {
 
         </Switch>
       </BrowserRouter>
-
     </div>
   );
 }
