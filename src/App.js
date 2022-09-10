@@ -13,27 +13,19 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route path="/" to="/landing" exact component={LandingPage} />
           <Route
             path="/home"
             exact
             render={(routerProps) => {
               return <HomePage routerProps={routerProps} />;
             }}
-        <Route path="/" to="/landing" exact component={LandingPage} />
-          <Route path="/home" exact render={(routerProps) => {
-            return (
-              <HomePage
-                routerProps={routerProps} />
-            );
-          }}
           />
           <Route path="/landing" exact component={LandingPage} />
           <Route path="/communal" exact component={CommunalPage} />
           <Route path="/food" exact component={FoodPage} />
           <Route path="/energy" exact component={EnergyPage} />
-          <Route path="/recyclables" exact component={RecyclablePage} />
           <Route path="/recyclable" exact component={RecyclablePage} />
-
         </Switch>
       </BrowserRouter>
     </div>
