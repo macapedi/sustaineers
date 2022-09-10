@@ -45,10 +45,11 @@ class HomeCard extends React.Component {
               />
             </div>
             <div className="main-card__info">
+              <Link to={`/${this.props.linkName}`} style={{ textDecoration: 'none', color: 'white' }}>
               <h2 className="main-card__info--title">{title}</h2>
+              </Link>
             </div>
           </div>
-        </Link>
       </div>
     );
   }
