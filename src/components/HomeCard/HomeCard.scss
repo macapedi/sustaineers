@@ -81,4 +81,40 @@
     
     
     }
+
+    &__img-container {
+      width: 50%;
+
+      @include tablet {
+        width: 50%;
+      }
+
+      @include desktop {
+        width: 20%;
+      }
+
+      &--image {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+      }
+    }
+
+    &__info {
+      width: 500px;
+      margin-left: 1rem;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &--title {
+        text-decoration: none;
+        color: rgb(30, 71, 59);
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
 }
