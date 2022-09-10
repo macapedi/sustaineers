@@ -9,6 +9,7 @@
     background-color: $dark-green;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     min-height: 10vh;
     padding: 1rem;
@@ -19,10 +20,12 @@
         align-items: center;
         font-size: larger;
         padding-left: 3rem;
+        padding-right: 3rem;
 
         @include desktop {
             padding-left: 6rem;
-            ;
+            padding-right: 6rem;
+            
         }
 
     }
@@ -53,5 +56,13 @@
             width: 50px;
 
         }
+    }
+
+    &__nav-bar{
+       display: flex;
+       gap: 1rem;
+       @include desktop{
+        gap: 2rem;
+       }
     }
 }

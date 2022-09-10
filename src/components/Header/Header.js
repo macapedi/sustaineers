@@ -12,13 +12,13 @@ function Header() {
                 </Link>
             </div>
             <div className='header__nav-bar'>
-                <Link to="/profiles/:id">
+                <Link to="/profiles/:id" className='header__logo-link'>
                     Profile
                 </Link>
-                <Link to="/profiles">
+                <Link to="/profiles" className='header__logo-link'>
                     Community
                 </Link>
-                <Link>
+                <Link className='header__logo-link'>
                     LOGOUT
                 </Link>
 
