@@ -7,11 +7,13 @@ import HomePage from './pages/HomePage/HomePage';
 import FoodPage from './pages/FoodPage/FoodPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import RecyclablePage from './pages/RecyclablePage/RecyclablesPage';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Header/>
         <Switch>
         <Route path="/" to="/landing" exact component={LandingPage} />
           <Route path="/home" exact render={(routerProps) => {
@@ -22,6 +24,24 @@ function App() {
           }}
           />
           <Route path="/landing" exact component={LandingPage} />
+          <Route path="/profiles" exact render={(routerProps) => {
+              return (
+                <PublicShelvesPage
+                  usersList={this.state.usersList}
+                  routerProps={routerProps} />
+              );
+            }}
+            />
+
+            <Route path="/profiles/:id" exact render={(routerProps) => {
+              return (
+                <UserPage
+                  
+                  routerProps={routerProps} />
+              );
+            }}
+            />
+
           <Route path="/communal" exact component={CommunalPage} />
           <Route path="/food" exact component={FoodPage} />
           <Route path="/energy" exact component={EnergyPage} />
