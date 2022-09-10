@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
+
 import './App.scss';
 import CommunalPage from './pages/CommunalPage/CommunalPage';
 import EnergyPage from './pages/EnergyPage/EnergyPage';
@@ -10,6 +11,7 @@ import RecyclablePage from './pages/RecyclablePage/RecyclablesPage';
 import Header from './components/Header/Header';
 import CommunityPage from './pages/CommunityPage/CommunityPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+
 
 function App() {
   return (
@@ -48,7 +50,6 @@ function App() {
           <Route path="/food" exact component={FoodPage} />
           <Route path="/energy" exact component={EnergyPage} />
           <Route path="/recyclable" exact component={RecyclablePage} />
-
         </Switch>
       </BrowserRouter>
     </div>
