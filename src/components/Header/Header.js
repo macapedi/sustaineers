@@ -1,6 +1,9 @@
 import "./Header.scss";
 import { Link, withRouter } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import { CgProfile } from "react-icons/cg";
+import { BsPeopleFill } from "react-icons/bs";
+import { FiLogOut } from "react-icons/fi";
 
 function Header() {
   return (
@@ -8,17 +11,20 @@ function Header() {
       <div className="header__logo-container">
         <Link to="/home" className="header__logo-link">
           <img src={logo} alt="sustaineers logo" className="header__logo"></img>
-          <p>Sustaineers</p>
+          <p className="header__title">Sustaineers</p>
         </Link>
       </div>
       <div className="header__nav-bar">
-        <Link to="/profiles/:id" className="header__logo-link">
-          Profile
+        <Link to="/profiles" className="header__link">
+          <BsPeopleFill className="header__icons" size={40} />
         </Link>
-        <Link to="/profiles" className="header__logo-link">
-          Community
+        <Link to="/profiles/:id" className="header__link">
+          <CgProfile className="header__icons" size={40} />
         </Link>
-        <Link className="header__logo-link">LOGOUT</Link>
+
+        <Link to="/landing" className="header__link">
+          <FiLogOut className="header__icons" size={40} />
+        </Link>
       </div>
     </header>
   );

@@ -1,56 +1,57 @@
-@use '../../styles/partials/mixins' as *;
-
+@use "../../styles/partials/mixins" as *;
 
 .main {
-    background-color: #90BEA0;
-    margin-top: 2rem;
+  overflow: hidden;
 
-    &-card {
-        width: 100%;
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        @include tablet{
-            width: 100%;
-        }
-    
-        &__img-container {
-            width: 50%;
-    
-            @include tablet{
-                width: 50%;
-            }
-    
-            @include desktop {
-                width: 50%;
-    
-            }
-    
-            &--image {
-                width: 100%;
-                height: 100%;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                border-radius: 8px;
-            }
-        }
-    
-        &__info {
-            width: 60%;
-            margin-left: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-    
-            &--title{
-                text-decoration: none;
-                color: white;
-            }
-        }
-    
-    
-    
+  &-card {
+    height: 250px;
+    width: 1500px !important;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 110px;
+    background-color: rgb(228, 241, 242);
+
+    @include tablet {
+      width: 100%;
     }
+
+    &__img-container {
+      width: 50%;
+
+      @include tablet {
+        width: 50%;
+      }
+
+      @include desktop {
+        width: 20%;
+      }
+
+      &--image {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+      }
+    }
+
+    &__info {
+      width: 500px;
+      margin-left: 1rem;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &--title {
+        text-decoration: none;
+        color: rgb(30, 71, 59);
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
 }
