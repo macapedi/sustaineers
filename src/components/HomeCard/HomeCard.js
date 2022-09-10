@@ -15,7 +15,7 @@ class HomeCard extends React.Component {
     if (this.props.linkName === "food") {
       source = food;
       altText = "vegetables, by Sharon Pittaway, unsplash";
-      title = "Food Sustainibility";
+      title = "Food Sustainability";
     } else if (this.props.linkName === "recyclable") {
       source = recycle;
       altText = "trash bins, by Pawel Czerwinski, unsplash";
@@ -32,7 +32,10 @@ class HomeCard extends React.Component {
 
     return (
       <div className="main">
-        <Link to={`/${this.props.linkName}`} style={{ textDecoration: 'none', color: 'white' }}>
+        <Link
+          to={`/${this.props.linkName}`}
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <div className="main-card">
             <div className="main-card__img-container">
               <img
