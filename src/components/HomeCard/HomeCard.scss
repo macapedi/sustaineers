@@ -1,23 +1,30 @@
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
 
 
 .main {
-    background-color: #90BEA0;
+    background-color: $light-green;
     margin-top: 2rem;
+    margin-left: 10%;
+    flex-direction: column;
+    align-items: center;
 
     &-card {
-        width: 100%;
+        width: 80%;
         margin-top: 2rem;
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: white;
+        border-radius: 8px;
     
         @include tablet{
-            width: 100%;
+            width: 80%;
         }
     
         &__img-container {
-            width: 50%;
+            width: 80%;
     
             @include tablet{
                 width: 50%;
@@ -32,21 +39,21 @@
                 width: 100%;
                 height: 100%;
                 margin-top: 1rem;
-                margin-bottom: 1rem;
                 border-radius: 8px;
             }
         }
     
         &__info {
-            width: 60%;
-            margin-left: 1rem;
+            width: 80%;
+            margin-bottom: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
     
             &--title{
                 text-decoration: none;
-                color: white;
+                color: black;
+                font-size: 2rem;
             }
         }
     

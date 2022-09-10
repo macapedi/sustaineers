@@ -11,4 +11,10 @@
     background-color: $light-green;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    &-title{
+        width: 80%;
+        color: white;
+        font-size: 1.75rem;
+    }
 }

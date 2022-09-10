@@ -15,7 +15,7 @@ class HomeCard extends React.Component {
     if (this.props.linkName === "food") {
       source = food;
       altText = "vegetables, by Sharon Pittaway, unsplash";
-      title = "Food Sustainibility";
+      title = "Food Sustainability";
     } else if (this.props.linkName === "recyclable") {
       source = recycle;
       altText = "trash bins, by Pawel Czerwinski, unsplash";
