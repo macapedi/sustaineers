@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
+
 import "./App.scss";
 import CommunalPage from "./pages/CommunalPage/CommunalPage";
 import EnergyPage from "./pages/EnergyPage/EnergyPage";
