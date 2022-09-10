@@ -1,0 +1,68 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    display: flex;
+    background-color: $dark-green;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    min-height: 10vh;
+    padding: 1rem;
+
+    @include tablet {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        font-size: larger;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        @include desktop {
+            padding-left: 6rem;
+            padding-right: 6rem;
+            
+        }
+
+    }
+
+
+    &__logo-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__logo {
+        height: 36px;
+        width: 36px;
+
+        @include tablet {
+
+            height: 50px;
+            width: 50px;
+
+        }
+    }
+
+    &__nav-bar{
+       display: flex;
+       gap: 1rem;
+       @include desktop{
+        gap: 2rem;
+       }
+    }
+}

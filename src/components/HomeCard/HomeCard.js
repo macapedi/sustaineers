@@ -6,27 +6,47 @@ import bulb from "../../assets/bulb.jpg";
 import recycle from "../../assets/recycle.jpg";
 import community from "../../assets/community.jpg";
 
-let table = {"food" : {}}
-
 class HomeCard extends React.Component {
   render() {
+    let source;
+    let altText;
+    let title;
+
+    if (this.props.linkName === "food") {
+      source = food;
+      altText = "vegetables, by Sharon Pittaway, unsplash";
+      title = "Food Sustainibility";
+    } else if (this.props.linkName === "recyclable") {
+      source = recycle;
+      altText = "trash bins, by Pawel Czerwinski, unsplash";
+      title = "Recyclables";
+    } else if (this.props.linkName === "energy") {
+      source = bulb;
+      altText = "tungsten light bulb, by Anthony Indraus, unsplash";
+      title = "Energy Resources";
+    } else if (this.props.linkName === "communal") {
+      source = community;
+      altText = "community garden, by Steve Adams, unsplash";
+      title = "Communal Impact";
+    }
+
     return (
-      <>
-        <Link to={`/${this.props.linkName}`}>
-          <div className="list">
-            <div className="list__img-container">
+      <div className="main">
+        <Link to={`/${this.props.linkName}`} style={{ textDecoration: 'none', color: 'white' }}>
+          <div className="main-card">
+            <div className="main-card__img-container">
               <img
-                className="list__img-container--image"
-                src={food}
-                alt="food by , unsplash"
+                className="main-card__img-container--image"
+                src={source}
+                alt={altText}
               />
             </div>
-            <div className="list__info">
-              <h2 className="list__info--title">{this.props.linkName}</h2>
+            <div className="main-card__info">
+              <h2 className="main-card__info--title">{title}</h2>
             </div>
           </div>
         </Link>
-      </>
+      </div>
     );
   }
 }

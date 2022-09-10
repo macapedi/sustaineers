@@ -1,0 +1,56 @@
+@use '../../styles/partials/mixins' as *;
+
+
+.main {
+    background-color: #90BEA0;
+    margin-top: 2rem;
+
+    &-card {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        @include tablet{
+            width: 100%;
+        }
+    
+        &__img-container {
+            width: 50%;
+    
+            @include tablet{
+                width: 50%;
+            }
+    
+            @include desktop {
+                width: 50%;
+    
+            }
+    
+            &--image {
+                width: 100%;
+                height: 100%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 8px;
+            }
+        }
+    
+        &__info {
+            width: 60%;
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            &--title{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    
+    
+    
+    }
+}
