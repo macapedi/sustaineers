@@ -1,54 +1,73 @@
 import React from "react";
 import "./UserCard.scss";
 import { Link } from "react-router-dom";
+import { AiTwotoneStar } from "react-icons/ai";
+import user1 from "../../assets/users/user1.jpg"
+import user2 from "../../assets/users/user2.jpg"
+import user3 from "../../assets/users/user3.jpg"
+import user4 from "../../assets/users/user4.jpg"
 
 
 class UserCard extends React.Component {
-  render() {
-    let source;
-    let altText;
-    let title;
+    render() {
+        let source;
+        let altText;
+        let name;
+        let bio;
+        let points;
 
-    if (this.props.linkName === "food") {
-      source = food;
-      altText = "vegetables, by Sharon Pittaway, unsplash";
-      title = "Food Sustainability";
-    } else if (this.props.linkName === "recyclable") {
-      source = recycle;
-      altText = "trash bins, by Pawel Czerwinski, unsplash";
-      title = "Recyclables";
-    } else if (this.props.linkName === "energy") {
-      source = bulb;
-      altText = "tungsten light bulb, by Anthony Indraus, unsplash";
-      title = "Energy Resources";
-    } else if (this.props.linkName === "communal") {
-      source = community;
-      altText = "community garden, by Steve Adams, unsplash";
-      title = "Communal Impact";
+        if (this.props.linkName === "user1") {
+            source = user1;
+            altText = "a girl waring a shirt";
+            name = "Aline Marie";
+            bio = "I love to recycle and I believe we can make a positive impact. I am 28 years old and want a clean enviroment for my kids";
+            points = 1500;
+        } else if (this.props.linkName === "user2") {
+            source = user2;
+            altText = "a man with a red shirt";
+            name = "Jake Rodriguez";
+            bio = "Like State Farm Jake, I want to be a good neighbor and reduce my footprint in the enviroment";
+            points = 2500;
+        } else if (this.props.linkName === "user3") {
+            source = user3;
+            altText = "a girl smiling";
+            name = "Beth Smith";
+            bio = "Computer Science student at FIU, vegan and passionate about enviromental care, one step at the time";
+            points = 1000;
+        } else if (this.props.linkName === "user4") {
+            source = user4;
+            altText = "a young man sitting";
+            name = "Ronald Campbell";
+            bio = "Learning everyday, wanting to make a change, start for myself";
+            points = 500;
+        }
+
+        return (
+            <div className="main">
+                <Link className="main-card"
+            
+                    style={{ textDecoration: "none", color: "white" }}
+                >
+
+                    <div className="main-card__img-container">
+                        <img
+                            className="main-card__img-container--image"
+                            src={source}
+                            alt={altText}
+                        />
+                    </div>
+                    <div className="main-card__info">
+                        <h2 className="main-card__info--title">{name}</h2>
+                        <p className="main-card__info--bio">{bio}</p>
+                    </div>
+                    <div>
+                        <AiTwotoneStar className=".star-logo" />
+                        <p>{points}</p>
+                    </div>
+                </Link>
+            </div>
+        );
     }
-
-    return (
-      <div className="main">
-        <Link
-          to={`/${this.props.linkName}`}
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <div className="main-card">
-            <div className="main-card__img-container">
-              <img
-                className="main-card__img-container--image"
-                src={source}
-                alt={altText}
-              />
-            </div>
-            <div className="main-card__info">
-              <h2 className="main-card__info--title">{title}</h2>
-            </div>
-          </div>
-        </Link>
-      </div>
-    );
-  }
 }
 
 export default UserCard;
