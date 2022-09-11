@@ -32,6 +32,10 @@ class HomeCard extends React.Component {
 
     return (
       <div className="main">
+        <Link
+          to={`/${this.props.linkName}`}
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <div className="main-card">
             <div className="main-card__img-container">
               <img
@@ -41,11 +45,10 @@ class HomeCard extends React.Component {
               />
             </div>
             <div className="main-card__info">
-              <Link to={`/${this.props.linkName}`} style={{ textDecoration: 'none', color: 'white' }}>
               <h2 className="main-card__info--title">{title}</h2>
-              </Link>
             </div>
           </div>
+        </Link>
       </div>
     );
   }
