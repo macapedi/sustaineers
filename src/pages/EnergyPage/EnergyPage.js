@@ -9,6 +9,8 @@ let values = [];
 let totalpoints = 0;
 
 function EnergyPage() {
+
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
@@ -22,6 +24,7 @@ function EnergyPage() {
     totalpoints = values.length * 100;
     values = [];
     console.log("after", totalpoints);
+
   };
   return (
     <div>
