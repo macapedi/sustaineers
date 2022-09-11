@@ -12,6 +12,7 @@ import RecyclablePage from "./pages/RecyclablePage/RecyclablesPage";
 import Header from "./components/Header/Header";
 import CommunityPage from "./pages/CommunityPage/CommunityPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
             }}
           />
           <Route path="/landing" exact component={LandingPage} />
+          <Route path="/login" exact component={LoginPage} />
           <Route
             path="/profiles"
             exact
