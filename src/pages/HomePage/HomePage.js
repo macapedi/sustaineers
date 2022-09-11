@@ -5,7 +5,9 @@ function HomePage() {
   return (
     <div className="home">
       <div className="home__container">
-        <h1 className="home__container--title">Earn your points this week!</h1>
+        <h1 className="home__container--title">
+          Hi Sustainer, ready to earn your points for this week?
+        </h1>
       </div>
       <div className="home__grid">
         <HomeCard linkName={"food"} />

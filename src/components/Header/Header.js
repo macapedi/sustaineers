@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import { CgProfile } from "react-icons/cg";
 import { BsPeopleFill } from "react-icons/bs";
 import { FiLogOut } from "react-icons/fi";
+import { FaStar } from "react-icons/fa";
 
 function Header() {
   return (
@@ -15,6 +16,8 @@ function Header() {
         </Link>
       </div>
       <div className="header__nav-bar">
+        <FaStar color="gold" size={40} />
+
         <Link to="/profiles" className="header__link">
           <BsPeopleFill className="header__icons" size={40} />
         </Link>

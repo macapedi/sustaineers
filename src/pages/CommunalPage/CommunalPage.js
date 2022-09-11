@@ -2,13 +2,16 @@ import "./CommunalPage.scss";
 import Category from "../../components/CategoryCard/Category";
 
 function CommunalPage(props) {
-  const onChangeHandler = (e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
   };
   return (
     <div className="communal">
-      <div className="communal-title">
-        <h1>This is Community Page</h1>
+      <div className="food-title">
+        <h1>
+          “If you think you are too small to be effective, you have never been
+          in bed with a mosquito.” – Betty Reese
+        </h1>
       </div>
 
       <Category>
@@ -16,7 +19,7 @@ function CommunalPage(props) {
           <h2>Volunteer</h2>
         </div>
 
-        <form className="communal-category__form" onChange={onChangeHandler}>
+        <form className="communal-category__form" onSubmit={onSubmitHandler}>
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
@@ -24,8 +27,12 @@ function CommunalPage(props) {
               name="community"
               value="100"
             />
-            <label htmlFor="localFarmersMarket" />
-            Cleaned up local parks
+            <label
+              htmlFor="localFarmersMarket"
+              className="food-category__form--labels"
+            >
+              Cleaned up local parks
+            </label>
           </div>
           <div className="communal-category__form--boxes">
             <input
@@ -34,14 +41,31 @@ function CommunalPage(props) {
               name="volunteer"
               value="100"
             />
-            <label htmlFor="localPlantGarden">Planted new trees</label>
+            <label
+              htmlFor="localPlantGarden"
+              className="food-category__form--labels"
+            >
+              Planted new trees
+            </label>
           </div>
           <div className="communal-category__form--boxes">
-            <input type="checkbox" id="volunteerCommunityCompost" name="community" value="100" />
-            <label htmlFor="localPlantGarden">Added to community compost</label>
+            <input
+              type="checkbox"
+              id="volunteerCommunityCompost"
+              name="community"
+              value="100"
+            />
+            <label
+              htmlFor="localPlantGarden"
+              className="food-category__form--labels"
+            >
+              Added to community compost
+            </label>
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="food-category__form--btn">
+              Submit
+            </button>
           </div>
         </form>
       </Category>
@@ -51,7 +75,7 @@ function CommunalPage(props) {
           <h2>Transportation</h2>
         </div>
 
-        <form className="communal-category__form" onChange={onChangeHandler}>
+        <form className="communal-category__form" onSubmit={onSubmitHandler}>
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
@@ -59,12 +83,24 @@ function CommunalPage(props) {
               name="community"
               value="100"
             />
-            <label htmlFor="transportCarPool" />
-            Carpooled to work
+            <label
+              htmlFor="transportCarPool"
+              className="food-category__form--labels"
+            >
+              Carpooled to work
+            </label>
           </div>
           <div className="communal-category__form--boxes">
-            <input type="checkbox" id="transportBusTrain" name="community" value="100" />
-            <label htmlFor="transportBusTrain">
+            <input
+              type="checkbox"
+              id="transportBusTrain"
+              name="community"
+              value="100"
+            />
+            <label
+              htmlFor="transportBusTrain"
+              className="food-category__form--labels"
+            >
               Took the bus or train
             </label>
           </div>
@@ -75,7 +111,12 @@ function CommunalPage(props) {
               name="community"
               value="100"
             />
-            <label htmlFor="transportWalked">Walked to the store or restaurant</label>
+            <label
+              htmlFor="transportWalked"
+              className="food-category__form--labels"
+            >
+              Walked to the store or restaurant
+            </label>
           </div>
           <div className="communal-category__form--boxes">
             <input
@@ -84,12 +125,17 @@ function CommunalPage(props) {
               name="community"
               value="100"
             />
-            <label htmlFor="tranportBike">
+            <label
+              htmlFor="tranportBike"
+              className="food-category__form--labels"
+            >
               Rode my bike
             </label>
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="food-category__form--btn">
+              Submit
+            </button>
           </div>
         </form>
       </Category>
