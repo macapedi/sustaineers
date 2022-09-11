@@ -2,13 +2,16 @@ import "./CommunalPage.scss";
 import Category from "../../components/CategoryCard/Category";
 
 function CommunalPage(props) {
-  const onChangeHandler = (e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
   };
   return (
     <div className="communal">
       <div className="food-title">
-        <h1>Eat healthy for a wealthy mood!</h1>
+        <h1>
+          “If you think you are too small to be effective, you have never been
+          in bed with a mosquito.” – Betty Reese
+        </h1>
       </div>
 
       <Category>
@@ -16,7 +19,7 @@ function CommunalPage(props) {
           <h2>Volunteer</h2>
         </div>
 
-        <form className="communal-category__form" onSubmit={onChangeHandler}>
+        <form className="communal-category__form" onSubmit={onSubmitHandler}>
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
@@ -72,7 +75,7 @@ function CommunalPage(props) {
           <h2>Transportation</h2>
         </div>
 
-        <form className="communal-category__form" onChange={onChangeHandler}>
+        <form className="communal-category__form" onSubmit={onSubmitHandler}>
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"

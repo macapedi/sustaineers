@@ -36,7 +36,9 @@ function EnergyPage() {
             </label>
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="food-category__form--btn">
+            Submit
+          </button>
         </form>
       </Category>
 
@@ -80,7 +82,9 @@ function EnergyPage() {
             </label>
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="food-category__form--btn">
+            Submit
+          </button>
         </form>
       </Category>
       <Category>
@@ -122,7 +126,9 @@ function EnergyPage() {
             </label>
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="food-category__form--btn">
+            Submit
+          </button>
         </form>
       </Category>
     </div>

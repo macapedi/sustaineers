@@ -2,7 +2,7 @@ import "./FoodPage.scss";
 import Category from "../../components/CategoryCard/Category";
 
 function FoodPage(props) {
-  const onChangeHandler = (e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
     console.log("here", e);
   };
@@ -17,7 +17,7 @@ function FoodPage(props) {
           <h2>Eating Local</h2>
         </div>
 
-        <form className="food-category__form" onSubmit={onChangeHandler}>
+        <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="local" name="food" value="100" />
             <label htmlFor="local" className="food-category__form--labels">
@@ -57,7 +57,7 @@ function FoodPage(props) {
           <h2>Reducing Food Waste</h2>
         </div>
 
-        <form className="food-category__form" onChange={onChangeHandler}>
+        <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
             <input
               type="checkbox"
@@ -136,7 +136,7 @@ function FoodPage(props) {
           <h2>Meat Choices</h2>
         </div>
 
-        <form className="food-category__form" onChange={onChangeHandler}>
+        <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="meatDontBuy" name="food" value="100" />
             <label
