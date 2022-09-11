@@ -2,45 +2,41 @@
 @use "../../styles/partials/_variables.scss" as *;
 
 .food {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    color: white;
+  }
+
+  &-category {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
 
-    &-title{
-        color: white;
+    &__subcategory {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
+    &__form {
+      width: 100%;
+      padding: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
 
-    &-category{
-        width: 90%;
-        background-color: white;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: row;
-
-        &__subcategory{
-            width: 100%;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        &__form{
-            width: 100%;
-            padding: 1rem;
-            background-color: white;
-            flex-direction: column;
-            justify-content: center;
-            text-align: left;
-
-            &--boxes{
-                width: 100%;
-            }
-        }
+      &--boxes {
+        width: 100%;
+      }
     }
-
+  }
 }
