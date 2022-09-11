@@ -26,7 +26,7 @@ function FoodPage(props) {
               value="100"
             />
             <label htmlFor="localFarmersMarket" />
-            Bought from farmer's market?
+            Bought from farmer's market
           </div>
           <div className="food-category__form--boxes">
             <input
@@ -35,11 +35,11 @@ function FoodPage(props) {
               name="food"
               value="100"
             />
-            <label htmlFor="localPlantGarden">Plant own produce?</label>
+            <label htmlFor="localPlantGarden">Planted my own produce</label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="localjoinCoop" name="food" value="100" />
-            <label htmlFor="localPlantGarden">Join a Co-op?</label>
+            <label htmlFor="localPlantGarden">Joined a Co-op</label>
           </div>
           <div>
             <button type="submit">Submit</button>
@@ -97,7 +97,7 @@ function FoodPage(props) {
               value="100"
             />
             <label htmlFor="wasteDonateFood">
-              Donated food that I didn't use.
+              Donated food that I didn't use
             </label>
           </div>
           <div>
@@ -115,7 +115,7 @@ function FoodPage(props) {
           <div className="food-category__form--boxes">
             <input type="checkbox" id="meatDontBuy" name="food" value="100" />
             <label htmlFor="meatDontBuy" />
-            Skip the meat isle.
+            Skip the meat isle
           </div>
           <div className="food-category__form--boxes">
             <input
