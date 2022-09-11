@@ -32,10 +32,6 @@ class HomeCard extends React.Component {
 
     return (
       <div className="main">
-        <Link
-          to={`/${this.props.linkName}`}
-          style={{ textDecoration: "none", color: "white" }}
-        >
           <div className="main-card">
             <div className="main-card__img-container">
               <img
