@@ -4,7 +4,14 @@ import Category from "../../components/CategoryCard/Category";
 function FoodPage(props) {
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    console.log("here", e);
+    let buttonsChecked = document.querySelectorAll(
+      'input[name="food"]:checked'
+    );
+    let values = [];
+    buttonsChecked.forEach((checkbox) => {
+      values.push(checkbox.value);
+    });
+    console.log(values);
   };
   return (
     <div className="food">
@@ -26,7 +33,7 @@ function FoodPage(props) {
           </div>
 
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="localjoinCoop" name="local" value="1" />
+            <input type="checkbox" id="localjoinCoop" name="food" value="1" />
 
             <label
               htmlFor="localjoinCoop"
@@ -73,7 +80,7 @@ function FoodPage(props) {
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="wasteBuyLess" name="waste" value="100" />
+            <input type="checkbox" id="wasteBuyLess" name="food" value="100" />
             <label
               htmlFor="wasteBuyLess"
               className="food-category__form--labels"
