@@ -9,6 +9,12 @@ import user4 from "../../assets/users/user4.jpg"
 
 
 class UserCard extends React.Component {
+
+
+
+
+
+
     render() {
         let source;
         let altText;
@@ -21,7 +27,7 @@ class UserCard extends React.Component {
             source = user1;
             altText = "a girl waring a shirt";
             name = "Aline Marie";
-            bio = "I love to recycle and I believe we can make a positive impact. I am 28 years old and want a clean enviroment for my kids";
+            bio = "I love to recycle and I believe we can make a positive impact. I am 28 years old and want a clean enviroment for my kids.";
             points = 1500;
             color = "gold"
         } else if (this.props.linkName === "user2") {
@@ -49,7 +55,7 @@ class UserCard extends React.Component {
 
         return (
             <div className="user">
-                <Link className="user-card"
+                <Link to={`/profiles/${this.props.linkName}`}className="user-card"
 
                     style={{ textDecoration: "none", color: "white" }}
                 >
