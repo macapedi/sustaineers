@@ -16,6 +16,7 @@
 
     &-card {
         width: 80%;
+        
         margin-top: 2rem;
         margin-bottom: 2rem;
         display: flex;
@@ -31,12 +32,14 @@
 
         @include desktop{
             width: 80%;
+            height: 14rem;
             flex-direction: row;
             align-items: center;
         }
     
         &__img-container {
             width: 80%;
+            max-height: 90%;
     
             @include tablet{
                 width: 50%;
@@ -44,7 +47,6 @@
     
             @include desktop {
                 width: 50%;
-    
             }
     
             &--image {
