@@ -51,7 +51,7 @@ function EnergyPage() {
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
             <label htmlFor="energy" className="food-category__form--labels">
-              Used your automatic dishwasher/wachine machines for full loads
+              Used your dishwasher/washing machines for full loads
               only?
             </label>
           </div>
