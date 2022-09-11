@@ -21,7 +21,7 @@ function Header() {
         <Link to="/profiles" className="header__link">
           <BsPeopleFill className="header__icons" size={40} />
         </Link>
-        <Link to="/profiles/:id" className="header__link">
+        <Link to="/profiles/user1" className="header__link">
           <CgProfile className="header__icons" size={40} />
         </Link>
 
