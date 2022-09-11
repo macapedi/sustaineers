@@ -12,6 +12,7 @@ import RecyclablePage from "./pages/RecyclablePage/RecyclablesPage";
 import Header from "./components/Header/Header";
 import CommunityPage from "./pages/CommunityPage/CommunityPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import Signin from "./Signin";
 
 function App() {
 
@@ -44,6 +45,8 @@ function App() {
               return <CommunityPage routerProps={routerProps} />;
             }}
           />
+
+          <Route path="/signin" exact component={Signin} />
 
           <Route
             path="/profiles/:id"

@@ -12,7 +12,7 @@ const Landing = () => {
       <div className="texts">
         <div className="title"> Sustaineers</div>
         <div className="subtitle"> Let's save our planet together</div>
-        <Link to={"/login"} className="link">
+        <Link to={"/signin"} className="link">
           Start Now →
         </Link>
       </div>
