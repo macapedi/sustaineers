@@ -1,17 +1,30 @@
-@use '../../styles/partials/_mixins.scss' as *;
-@use '../../styles/partials/_variables.scss' as *;
-
+@use "../../styles/partials/_mixins.scss" as *;
+@use "../../styles/partials/_variables.scss" as *;
 
 .main {
-    background-color: $light-green;
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include desktop {
+    width: 50%;
+  }
+
+  &-card {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border-radius: 8px;
 
-    @include desktop{
-        width: 50%;
+    @include tablet {
+      width: 80%;
     }
 
     &-card {
@@ -85,38 +98,84 @@
     }
 
     &__img-container {
-      width: 50%;
+      width: 80%;
 
       @include tablet {
         width: 50%;
       }
 
       @include desktop {
-        width: 20%;
+        width: 50%;
       }
 
       &--image {
         width: 100%;
         height: 100%;
         margin-top: 1rem;
-        margin-left: 1rem;
         margin-bottom: 1rem;
         border-radius: 8px;
       }
     }
 
     &__info {
-      width: 500px;
-      margin-left: 1rem;
+      width: 80%;
+      margin-bottom: 1rem;
+      display: flex;
       flex-direction: column;
       justify-content: space-evenly;
 
+      @include desktop {
+        width: 40%;
+      }
+
       &--title {
         text-decoration: none;
-        color: rgb(30, 71, 59);
-        font-size: 50px;
-        font-weight: bold;
+        color: black;
+        font-size: 2rem;
+
+        @include desktop {
+          font-size: 1.5rem;
+        }
       }
     }
-}
+  }
 
+  &__img-container {
+    width: 50%;
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include desktop {
+      width: 20%;
+    }
+
+    &--image {
+      width: 100%;
+      height: 100%;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+  }
+
+  &__info {
+    width: 500px;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &--title {
+      text-decoration: none;
+      color: rgb(30, 71, 59);
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+  &-card:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+  }
+}
