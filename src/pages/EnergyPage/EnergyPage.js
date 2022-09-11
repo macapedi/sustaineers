@@ -19,16 +19,19 @@ function EnergyPage() {
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy" />
-            Turned off unnecessary lights?
+            <label htmlFor="energy" className="food-category__form--labels">
+              Turned off unnecessary lights?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Minimized time used For electronics?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Minimized time used For electronics?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">
+            <label htmlFor="energy" className="food-category__form--labels">
               Turned off AC and lights when not home?
             </label>
           </div>
@@ -45,28 +48,34 @@ function EnergyPage() {
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy" />
-            Used your automatic dishwasher/wachine machines for full loads only?
+            <label htmlFor="energy" className="food-category__form--labels">
+              Used your automatic dishwasher/wachine machines for full loads
+              only?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Checked faucets and pipes for leaks?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Checked faucets and pipes for leaks?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Took shorter showers?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Took shorter showers?
+            </label>
           </div>
 
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">
+            <label htmlFor="energy" className="food-category__form--labels">
               Turned off water while brushing/shaving?
             </label>
           </div>
 
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">
+            <label htmlFor="energy" className="food-category__form--labels">
               Watered your lawn only when it needs?
             </label>
           </div>
@@ -82,26 +91,35 @@ function EnergyPage() {
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy" />
-            Drove electric vehicles?
+            <label htmlFor="energy" className="food-category__form--labels">
+              Drove electric vehicles?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Combined short trips while driving?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Combined short trips while driving?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Inflated your tires?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Inflated your tires?
+            </label>
           </div>
 
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Replaced your air filter?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Replaced your air filter?
+            </label>
           </div>
 
           <div className="food-category__form--boxes">
             <input type="checkbox" id="energy" name="energy" value="100" />
-            <label htmlFor="energy">Used the highest feasible gear?</label>
+            <label htmlFor="energy" className="food-category__form--labels">
+              Used the highest feasible gear?
+            </label>
           </div>
 
           <button type="submit">Submit</button>

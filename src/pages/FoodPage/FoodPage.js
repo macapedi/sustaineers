@@ -24,8 +24,12 @@ function FoodPage(props) {
               name="local"
               value="1"
             />
-            <label htmlFor="localFarmersMarket" />
-            Bought from farmer's market?
+            <label
+              htmlFor="localFarmersMarket"
+              className="food-category__form--labels"
+            >
+              Bought from farmer's market?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input
@@ -34,15 +38,26 @@ function FoodPage(props) {
               name="local"
               value="1"
             />
-            <label htmlFor="localPlantGarden">Plant own produce?</label>
+            <label
+              htmlFor="localPlantGarden"
+              className="food-category__form--labels"
+            >
+              Plant own produce?
+            </label>
           </div>
           <div className="food-category__form--boxes">
             <input type="checkbox" id="localjoinCoop" name="local" value="1" />
-            <label htmlFor="localPlantGarden">Join a Co-op?</label>
+            <label
+              htmlFor="localPlantGarden"
+              className="food-category__form--labels"
+            >
+              Join a Co-op?
+            </label>
           </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
+
+          <button type="submit" className="food-category__form--btn">
+            Submit
+          </button>
         </form>
       </Category>
     </div>
