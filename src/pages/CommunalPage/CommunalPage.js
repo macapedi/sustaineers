@@ -4,6 +4,14 @@ import Category from "../../components/CategoryCard/Category";
 function CommunalPage(props) {
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    let buttonsChecked = document.querySelectorAll(
+      'input[name="community"]:checked'
+    );
+    let values = [];
+    buttonsChecked.forEach((checkbox) => {
+      values.push(checkbox.value);
+    });
+    console.log(values);
   };
   return (
     <div className="communal">
@@ -23,12 +31,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="volunteerCleanUps"
+              id="40"
               name="community"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="localFarmersMarket"
+              htmlFor="40"
               className="food-category__form--labels"
             >
               Cleaned up local parks
@@ -37,12 +45,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="volunteerPlantTrees"
+              id="41"
               name="volunteer"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="localPlantGarden"
+              htmlFor="41"
               className="food-category__form--labels"
             >
               Planted new trees
@@ -51,12 +59,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="volunteerCommunityCompost"
+              id="42"
               name="community"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="localPlantGarden"
+              htmlFor="42"
               className="food-category__form--labels"
             >
               Added to community compost
@@ -79,12 +87,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="transportCarpool"
+              id="43"
               name="community"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="transportCarPool"
+              htmlFor="43"
               className="food-category__form--labels"
             >
               Carpooled to work
@@ -93,12 +101,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="transportBusTrain"
+              id="44"
               name="community"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="transportBusTrain"
+              htmlFor="44"
               className="food-category__form--labels"
             >
               Took the bus or train
@@ -107,12 +115,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="transportWalked"
+              id="45"
               name="community"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="transportWalked"
+              htmlFor="45"
               className="food-category__form--labels"
             >
               Walked to the store or restaurant
@@ -121,12 +129,12 @@ function CommunalPage(props) {
           <div className="communal-category__form--boxes">
             <input
               type="checkbox"
-              id="transportBike"
+              id="46"
               name="community"
-              value="100"
+              value="community"
             />
             <label
-              htmlFor="tranportBike"
+              htmlFor="46"
               className="food-category__form--labels"
             >
               Rode my bike
