@@ -8,8 +8,8 @@ function EnergyPage() {
   };
   return (
     <div>
-      <div>
-        <h1>This is Energy Page</h1>
+      <div className="food-title">
+        <h1>Energy saved is Energy generated!</h1>
       </div>
       <Category>
         <div className="food-category__subcategory">

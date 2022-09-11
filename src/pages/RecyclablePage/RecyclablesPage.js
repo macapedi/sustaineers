@@ -8,8 +8,8 @@ function RecyclablePage() {
 
   return (
     <div>
-      <div>
-        <h1>This is Recyclable Page</h1>
+      <div className="food-title">
+        <h1>Recycle the present, save the future !</h1>
       </div>
       <Category>
         <div className="food-category__subcategory">
