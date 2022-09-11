@@ -69,7 +69,7 @@ class UserCard extends React.Component {
                     </div>
                     <div className="user-card__info">
                         <h2 className="user-card__info--title">{name}</h2>
-                        <p className="user-card__info--bio">{bio}</p>
+
                         <div className="user-card__info--points">
                             <AiTwotoneStar className=".star-logo" color={color} height="3rem" width="3rem" />
                             <p className="user-card__info--bio">{points}</p>
