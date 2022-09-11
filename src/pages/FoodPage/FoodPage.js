@@ -26,28 +26,22 @@ function FoodPage(props) {
 
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="local" name="food" value="100" />
-            <label htmlFor="local" className="food-category__form--labels">
+            <input type="checkbox" id="1" name="food" value="food" />
+            <label htmlFor="1" className="food-category__form--labels">
               Bought from farmer's market?
             </label>
           </div>
 
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="localjoinCoop" name="food" value="1" />
+            <input type="checkbox" id="2" name="food" value="food" />
 
-            <label
-              htmlFor="localjoinCoop"
-              className="food-category__form--labels"
-            >
+            <label htmlFor="2" className="food-category__form--labels">
               Planted my own produce?
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="localjoinCoop" name="food" value="100" />
-            <label
-              htmlFor="localPlantGarden"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="3" name="food" value="food" />
+            <label htmlFor="3" className="food-category__form--labels">
               Joined a Co-op
             </label>
           </div>
@@ -66,67 +60,32 @@ function FoodPage(props) {
 
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
-            <input
-              type="checkbox"
-              id="wasteFinishFood"
-              name="food"
-              value="100"
-            />
-            <label
-              htmlFor="localFinishFood"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="4" name="food" value="food" />
+            <label htmlFor="4" className="food-category__form--labels">
               Finished all food on my plate
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="wasteBuyLess" name="food" value="100" />
-            <label
-              htmlFor="wasteBuyLess"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="5" name="food" value="food" />
+            <label htmlFor="5" className="food-category__form--labels">
               Bought less quantity to reduce spoilage
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input
-              type="checkbox"
-              id="wasteStoreFood"
-              name="food"
-              value="100"
-            />
-            <label
-              htmlFor="wasteStoreFood"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="6" name="food" value="food" />
+            <label htmlFor="6" className="food-category__form--labels">
               Stored food wisely
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input
-              type="checkbox"
-              id="wasteBuyUglies"
-              name="food"
-              value="100"
-            />
-            <label
-              htmlFor="wasteBuyUglies"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="7" name="food" value="food" />
+            <label htmlFor="7" className="food-category__form--labels">
               Bought ugly fruits and vegetables
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input
-              type="checkbox"
-              id="wasteDonateFood"
-              name="food"
-              value="100"
-            />
-            <label
-              htmlFor="wasteDonateFood"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="8" name="food" value="food" />
+            <label htmlFor="8" className="food-category__form--labels">
               Donated food that I didn't use
             </label>
           </div>
@@ -145,48 +104,26 @@ function FoodPage(props) {
 
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="meatDontBuy" name="food" value="100" />
-            <label
-              htmlFor="meatDontBuy"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="9" name="food" value="food" />
+            <label htmlFor="9" className="food-category__form--labels">
               Skip the meat isle
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input
-              type="checkbox"
-              id="meatSmallerAnimals"
-              name="food"
-              value="100"
-            />
-            <label
-              htmlFor="meatSmallerAnimals"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="10" name="food" value="food" />
+            <label htmlFor="10" className="food-category__form--labels">
               Bought chicken instead of beef or pork
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input
-              type="checkbox"
-              id="meatBuyLessMeat"
-              name="food"
-              value="100"
-            />
-            <label
-              htmlFor="meatBuyLessMeat"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="11" name="food" value="food" />
+            <label htmlFor="11" className="food-category__form--labels">
               Bought meat less times this week
             </label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="meatBuyFish" name="food" value="100" />
-            <label
-              htmlFor="meatBuyFish"
-              className="food-category__form--labels"
-            >
+            <input type="checkbox" id="12" name="food" value="food" />
+            <label htmlFor="12" className="food-category__form--labels">
               Bought fish instead
             </label>
           </div>
