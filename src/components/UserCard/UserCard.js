@@ -9,6 +9,12 @@ import user4 from "../../assets/users/user4.jpg"
 
 
 class UserCard extends React.Component {
+
+
+
+
+
+
     render() {
         let source;
         let altText;
@@ -49,7 +55,7 @@ class UserCard extends React.Component {
 
         return (
             <div className="user">
-                <Link className="user-card"
+                <Link to={`/profiles/${this.props.linkName}`}className="user-card"
 
                     style={{ textDecoration: "none", color: "white" }}
                 >
