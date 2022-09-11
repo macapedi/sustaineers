@@ -1,0 +1,46 @@
+[
+    {
+        "user":"user1",
+        "name":"Aline Marie",
+        "bio":"I love to recycle and I believe we can make a positive impact. I am 28 years old and want a clean enviroment for my kids.",
+        "points": 1500,
+        "foodSustainability": 500,
+        "recyclables": 400,
+        "energyResources": 100,
+        "communalImpact": 500,
+        "color": "gold"
+    },
+    {
+        "user":"user2",
+        "name":"Jake Rodriguez",
+        "bio":"Like State Farm Jake, I want to be a good neighbor and reduce my footprint in the enviroment.",
+        "points": 2500,
+        "foodSustainability": 500,
+        "recyclables": 500,
+        "energyResources": 1000,
+        "communalImpact": 500,
+        "color": "gold"
+    },
+    {
+        "user":"user3",
+        "name":"Beth Smith",
+        "bio":"Computer Science student at FIU, vegan and passionate about enviromental care, one step at the time.",
+        "points": 1000,
+        "foodSustainability": 200,
+        "recyclables": 300,
+        "energyResources": 200,
+        "communalImpact": 300,
+        "color": "brown"
+    },
+    {
+        "user":"user4",
+        "name":"Ronald Campbell",
+        "bio":"Computer Science student at FIU, vegan and passionate about enviromental care, one step at the time.",
+        "points": 500,
+        "foodSustainability": 100,
+        "recyclables": 100,
+        "energyResources": 200,
+        "communalImpact": 100,
+        "color": "blue"
+    }
+]
