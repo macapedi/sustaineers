@@ -10,13 +10,13 @@ import UserCard from '../../components/UserCard/UserCard';
 function CommunityPage() {
   return (
     <div className='community'>
-     <h1 className='community__title'>Get inspired by people in your community!</h1>
-
-     <UserCard linkName={"user1"}/>
-     <UserCard linkName={"user2"}/>
-     <UserCard linkName={"user3"}/>
-     <UserCard linkName={"user4"}/>
-   
+      <h1 className='community__title'>Get inspired by people in your community!</h1>
+      <div className='user__card-container'>
+        <UserCard linkName={"user1"} />
+        <UserCard linkName={"user2"} />
+        <UserCard linkName={"user3"} />
+        <UserCard linkName={"user4"} />
+      </div>
     </div>
   );
 }
