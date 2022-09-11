@@ -1,0 +1,60 @@
+@use "../../styles/partials/_mixins.scss" as *;
+@use "../../styles/partials/_variables.scss" as *;
+
+.food {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    margin-top: 1rem;
+    color: rgb(3, 74, 79);
+  }
+
+  &-category {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__subcategory {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    &__form {
+      width: 100%;
+      padding: 1rem;
+      flex-direction: column;
+      text-align: left;
+
+      &--boxes {
+        width: 100%;
+        height: 40px;
+        margin-right: 2rem;
+      }
+
+      &--labels {
+        margin-left: 0.5rem;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &--btn {
+        justify-content: flex-end;
+        background-color: rgb(77, 169, 144);
+        font-size: 20px;
+        padding: 0.5rem;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

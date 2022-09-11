@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 
 import "./App.scss";
+import userData from "./data/users.json";
 import CommunalPage from "./pages/CommunalPage/CommunalPage";
 import EnergyPage from "./pages/EnergyPage/EnergyPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -13,6 +14,15 @@ import CommunityPage from "./pages/CommunityPage/CommunityPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 
 function App() {
+
+
+  const handleSubmit = (points, userId) => {
+    if (userData.user === userId) {
+      return userData.points = points;
+    }
+  }
+
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -43,10 +53,34 @@ function App() {
             }}
           />
 
-          <Route path="/communal" exact component={CommunalPage} />
-          <Route path="/food" exact component={FoodPage} />
-          <Route path="/energy" exact component={EnergyPage} />
-          <Route path="/recyclable" exact component={RecyclablePage} />
+          <Route path="/communal" exact
+            render={(routerProps) => {
+              return <CommunalPage
+                handleSubmit={handleSubmit}
+                routerProps={routerProps} />;
+            }}
+          />
+          <Route path="/food" exact
+            render={(routerProps) => {
+              return <FoodPage
+                handleSubmit={handleSubmit}
+                routerProps={routerProps} />;
+            }}
+          />
+          <Route path="/energy" exact
+            render={(routerProps) => {
+              return <EnergyPage
+                handleSubmit={handleSubmit}
+                routerProps={routerProps} />;
+            }}
+          />
+          <Route path="/recyclable" exact
+            render={(routerProps) => {
+              return <RecyclablePage
+                handleSubmit={handleSubmit}
+                routerProps={routerProps} />;
+            }}
+          />
         </Switch>
       </BrowserRouter>
     </div>
