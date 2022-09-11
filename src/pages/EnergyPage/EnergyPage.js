@@ -23,12 +23,12 @@ function EnergyPage() {
             Turned off unnecessary lights?
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="metal" name="energy" value="100" />
-            <label htmlFor="metal">Minimized time used For electronics?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Minimized time used For electronics?</label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="utensils" name="energy" value="100" />
-            <label htmlFor="utensils">
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">
               Turned off AC and lights when not home?
             </label>
           </div>
@@ -49,24 +49,26 @@ function EnergyPage() {
             Used your automatic dishwasher/wachine machines for full loads only?
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="metal" name="energy" value="100" />
-            <label htmlFor="metal">Checked faucets and pipes for leaks?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Checked faucets and pipes for leaks?</label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="utensils" name="energy" value="100" />
-            <label htmlFor="utensils">Took shorter showers?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Took shorter showers?</label>
           </div>
 
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="solo" name="energy" value="100" />
-            <label htmlFor="solo">
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">
               Turned off water while brushing/shaving?
             </label>
           </div>
 
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="solo" name="energy" value="100" />
-            <label htmlFor="solo">Watered your lawn only when it needs?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">
+              Watered your lawn only when it needs?
+            </label>
           </div>
 
           <button type="submit">Submit</button>
@@ -84,22 +86,22 @@ function EnergyPage() {
             Drove electric vehicles?
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="metal" name="energy" value="100" />
-            <label htmlFor="metal">Combined short trips while driving?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Combined short trips while driving?</label>
           </div>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="utensils" name="energy" value="100" />
-            <label htmlFor="utensils">Inflated your tires?</label>
-          </div>
-
-          <div className="food-category__form--boxes">
-            <input type="checkbox" id="utensils" name="energy" value="100" />
-            <label htmlFor="utensils">Replaced your air filter?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Inflated your tires?</label>
           </div>
 
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="solo" name="energy" value="100" />
-            <label htmlFor="solo">Used the highest feasible gear?</label>
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Replaced your air filter?</label>
+          </div>
+
+          <div className="food-category__form--boxes">
+            <input type="checkbox" id="energy" name="energy" value="100" />
+            <label htmlFor="energy">Used the highest feasible gear?</label>
           </div>
 
           <button type="submit">Submit</button>
