@@ -1,0 +1,99 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+
+.user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  
+
+    @include desktop {
+        width: 50%;
+    }
+
+
+    &-card {
+        display: flex;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 110px;
+        background-color: white;
+        gap: 0.5rem;
+
+        @include tablet {
+            flex-direction: row;
+            width: 80%;
+
+        }
+
+        @include desktop {
+            width: 80%;
+            flex-direction: row;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        &__img-container {
+            width: 50%;
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include desktop {
+                width: 20%;
+            }
+
+            &--image {
+                width: 100%;
+                max-height: 50%;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 8px;
+            }
+        }
+
+        &__info {
+          
+            padding: 1rem;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            @include desktop {
+                width: 40%;
+            }
+
+            &--title {
+                text-decoration: none;
+                color: rgb(30, 71, 59);
+                font-size: 50px;
+                font-weight: bold;
+
+                @include desktop {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &--bio {
+                color: $black;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &-card:hover {
+        transform: scale(1.05);
+        border-radius: 10px;
+      }
+}
+
+
