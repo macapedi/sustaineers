@@ -1,17 +1,26 @@
 import "./FoodPage.scss";
 import Category from "../../components/CategoryCard/Category";
 
+let submitLocalStatus = false;
+let submitFoodWasteStatus = false;
+let sumbitMeatChoicesStatus = false;
+let values = [];
+let totalpoints = 0;
+
 function FoodPage(props) {
   const onSubmitHandler = (e) => {
     e.preventDefault();
+
+    console.log("before", totalpoints);
     let buttonsChecked = document.querySelectorAll(
       'input[name="food"]:checked'
     );
-    let values = [];
     buttonsChecked.forEach((checkbox) => {
       values.push(checkbox.value);
     });
-    console.log(values);
+    totalpoints = values.length * 100;
+    values = [];
+    console.log("after", totalpoints);
   };
   return (
     <div className="food">

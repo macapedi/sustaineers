@@ -1,17 +1,24 @@
 import "./RecyclablePage.scss";
 import Category from "../../components/CategoryCard/Category";
 
+let submitReducePlasticStatus = false;
+let submitClothingStatus = false;
+let submitPaperStatus = false;
+let values = [];
+let totalpoints = 0;
+
 function RecyclablePage() {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     let buttonsChecked = document.querySelectorAll(
       'input[name="recycle"]:checked'
     );
-    let values = [];
     buttonsChecked.forEach((checkbox) => {
       values.push(checkbox.value);
     });
-    console.log(values);
+    totalpoints = values.length * 100;
+    values = [];
+    console.log("after", totalpoints);
   };
 
   return (
@@ -64,7 +71,7 @@ function RecyclablePage() {
 
         <form className="food-category__form" onSubmit={onSubmitHandler}>
           <div className="food-category__form--boxes">
-            <input type="checkbox" id="24" name="recycle" value="recycle"/>
+            <input type="checkbox" id="24" name="recycle" value="recycle" />
             <label htmlFor="24" className="food-category__form--labels">
               Avoided fast fashion items?
             </label>

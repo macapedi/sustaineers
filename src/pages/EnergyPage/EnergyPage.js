@@ -2,17 +2,26 @@ import "./EnergyPage.scss";
 import Category from "../../components/CategoryCard/Category";
 import Footer from "../../components/Footer/Footer";
 
+let submitElectricityStatus = false;
+let submitWaterStatus = false;
+let submitGasStatus = false;
+let values = [];
+let totalpoints = 0;
+
 function EnergyPage() {
   const onSubmitHandler = (e) => {
     e.preventDefault();
+
+    console.log("before", totalpoints);
     let buttonsChecked = document.querySelectorAll(
       'input[name="energy"]:checked'
     );
-    let values = [];
     buttonsChecked.forEach((checkbox) => {
       values.push(checkbox.value);
     });
-    console.log(values);
+    totalpoints = values.length * 100;
+    values = [];
+    console.log("after", totalpoints);
   };
   return (
     <div>
