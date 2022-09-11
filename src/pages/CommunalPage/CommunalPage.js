@@ -1,17 +1,26 @@
 import "./CommunalPage.scss";
 import Category from "../../components/CategoryCard/Category";
 
+
+let submitVolunteerStatus = false;
+let submitTransportationStatus = false;
+let values = [];
+let totalpoints = 0;
+
 function CommunalPage(props) {
   const onSubmitHandler = (e) => {
     e.preventDefault();
+
+    console.log("before", totalpoints);
     let buttonsChecked = document.querySelectorAll(
       'input[name="community"]:checked'
     );
-    let values = [];
     buttonsChecked.forEach((checkbox) => {
       values.push(checkbox.value);
     });
-    console.log(values);
+    totalpoints = values.length * 100;
+    values = [];
+    console.log("after", totalpoints);
   };
   return (
     <div className="communal">
