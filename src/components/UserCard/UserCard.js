@@ -43,22 +43,22 @@ class UserCard extends React.Component {
         }
 
         return (
-            <div className="main">
-                <Link className="main-card"
+            <div className="user">
+                <Link className="user-card"
             
                     style={{ textDecoration: "none", color: "white" }}
                 >
 
-                    <div className="main-card__img-container">
+                    <div className="user-card__img-container">
                         <img
-                            className="main-card__img-container--image"
+                            className="user-card__img-container--image"
                             src={source}
                             alt={altText}
                         />
                     </div>
-                    <div className="main-card__info">
-                        <h2 className="main-card__info--title">{name}</h2>
-                        <p className="main-card__info--bio">{bio}</p>
+                    <div className="user-card__info">
+                        <h2 className="user-card__info--title">{name}</h2>
+                        <p className="user-card__info--bio">{bio}</p>
                     </div>
                     <div>
                         <AiTwotoneStar className=".star-logo" />
