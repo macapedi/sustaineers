@@ -2,7 +2,11 @@ import "./EnergyPage.scss";
 import Category from "../../components/CategoryCard/Category";
 import Footer from "../../components/Footer/Footer";
 
+const submitEnergyStatus = false;
+
 function EnergyPage() {
+
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
     let buttonsChecked = document.querySelectorAll(
@@ -13,6 +17,7 @@ function EnergyPage() {
       values.push(checkbox.value);
     });
     console.log(values);
+    
   };
   return (
     <div>
